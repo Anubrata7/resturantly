@@ -1,0 +1,153 @@
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Playfair Display",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+
+    --background-color: #0c0b09; /* Background color for the entire website, including individual sections */
+    --default-color: rgba(255, 255, 255, 0.7); /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #cda45e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #29261f; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #0c0b09; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+
+    --nav-color: #ffffff;  /* The default color of the main navmenu links */
+    --nav-hover-color: #cda45e; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #29261f; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #29261f; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #cda45e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+    /* min-height: 300vh; */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+.btn{
+    padding: 5px 30px !important;
+}
+.btn-fill{
+    padding: 0 !important;
+    background-color: var(--accent-color);
+    position: relative;
+}
+/*
+.circle-span-1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1999;
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    animation: btn-animation 4s infinite;
+    border: 3px solid red;
+    background-color: transparent;
+}
+.circle-span-2{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    z-index: 1999;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: btn-animation 4s infinite;
+    border: 3px solid rgb(0, 42, 255);
+    background-color: transparent;
+} */
+@keyframes btn-animation {
+    /* 0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;} */
+}
+
+
+.btn-outline{
+    color: var(--default-color);
+    outline: 2px solid var(--accent-color);
+}
+.btn-outline:hover{
+    background-color: var(--accent-color);
+    transition: all 0.3 ease;
+}
+img{
+    display: inline-block;
+}
+ul,ol{
+    list-style: none;
+}
+.after-style::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    height: 1px;
+    width: 120px;
+    background-color: var(--accent-color);
+    margin-left: 10px;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+.why-us-section h2,
+.menu-section h2,
+.specials-section h2,
+.reservation-section h2,
+.testimonials-section h2,
+.gallery-section h2,
+.team-section h2,
+.contact-section h2{
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 50px 0;
+}
+.position-relative.fw-500{
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+.fw-500{
+    font-weight: 500;
+}
+.bi.bi-quote.quote-icon-right{
+    display: inline-block;
+    transform: rotate(180deg) !important;
+}
