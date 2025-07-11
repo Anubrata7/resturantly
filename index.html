@@ -8,8 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
     <!-- Bootstraps css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- AOS css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- respomsive css -->
+     <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- bootstrap icon cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Fancybox CSS -->
@@ -24,20 +28,21 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <!-- slick-slider js -->
     <script src="./assets/js/slick-slider.js" defer></script>
+    
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <header id="header-section">
         <div class="top-header" id="top-header">
             <div class="container">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex gap-4 contact-links">
                         <a href="mailto:anubratadeb9@gmail.com"><i class="bi bi-envelope"></i> anubratadeb9@gmail.com</a>
                         <a href="tel:7908970852"><i class="bi bi-phone"></i> +91 7908970852</a>
                     </div>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex">
                         <a href="#">En</a>
-                        <span>/</span>
+                        <span style="margin: 0 5px;">/</span>
                         <a href="#">De</a>
                     </div>
                 </div>
@@ -47,7 +52,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <!-- <img src="./assets/images/shop.png" alt="Resturantly-logo" class="img-fluid"> -->
-                    <a class="navbar-brand fs-2" href="#">Resturantly</a>
+                    <a class="navbar-brand" href="#">Resturantly</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -57,36 +62,36 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about-section">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#menu-section">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Specials</a>
+                            <a class="nav-link" href="#specials-section">Specials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
+                            <a class="nav-link" href="#event-slider-section">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Chefs</a>
+                            <a class="nav-link" href="#team-section">Chefs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#gallery-section">Gallery</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact-section">Contact</a>
                         </li>
                     </ul>
-                        <a class="btn btn-outline rounded-pill d-none d-lg-block d-xl-block d-xxl-block" href="#">BOOK A TABLE</a>              
+                        <a class="btn btn-outline rounded-pill d-none d-lg-block d-xl-block d-xxl-block" href="#reservation-section">BOOK A TABLE</a>              
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="banner-section position-relative">
+    <!-- <section class="banner-section position-relative" id="banner-section">
         <div class="container">
             <div class="text-block d-flex align-items-center justify-content-between">
                 <div>
@@ -99,17 +104,35 @@
                 </div>
                 <div>
                     <a data-fancybox href="https://www.youtube.com/watch?v=Y7f98aduVJ8">
-                        <div class="btn btn-fill rounded-circle"><i class="text-light bi bi-play-fill"></i></div>
-                        <span class="circle-span-1"></span>
-                        <span class="circle-span-2"></span>
-                        <span class="circle-span-3"></span>
+                        <button><i class="text-light bi bi-play-fill"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="banner-section position-relative" id="banner-section">
+        <img src="./assets/images/hero-bg.jpg" alt="" class="img-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8">
+                    <h2>Welcome to <span style="color: #CDA45E;">Resturantly</span></h2>
+                    <p class="text-light">Delivering great food for more than 18 years!</p>
+                    <div class="d-flex gap-4">
+                        <a class="btn btn-outline rounded-pill" href="#">OUR MENU</a>   
+                        <a class="btn btn-outline rounded-pill" href="#">BOOK A TABLE</a>   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Y7f98aduVJ8">
+                        <button><i class="text-light bi bi-play-fill"></i></button>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-section position-relative">
+    <section class="about-section position-relative" id="about-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12 about-text-block">
@@ -129,7 +152,7 @@
         </div>
     </section>
 
-    <section class="why-us-section">
+    <section class="why-us-section" id="why-us-section">
         <div class="container">
             <p class="position-relative fw-500">WHY US<span class="after-style "></span></p>
             <h2>Why Choose Our Restaurant</h2>
@@ -158,10 +181,9 @@
                 </div>
             </div>            
         </div>
-    </section>
-    
+    </section>    
 
-    <section class="menu-section">
+    <section class="menu-section" id="menu-section">
         <div class="container">
             <p class="position-relative fw-500">MENU<span class="after-style "></span></p>
             <h2>Check Our Tasty Menu</h2>
@@ -302,7 +324,8 @@
         </div>
     </section>
 
-    <section class="specials-section">
+    <div data-aos="fade-up-right">
+    <section class="specials-section" id="specials-section">
         <div class="container">
             <p class="position-relative fw-500">SPECIALS<span class="after-style "></span></p>
             <h2>Check Our Specials</h2>
@@ -374,8 +397,9 @@
             </div>
         </div>
     </section>
+    </div>
 
-    <section class="event-slider-section">
+    <section class="event-slider-section" id="event-slider-section">
         <div class="container">
 
             <div class="eventSliders">
@@ -437,7 +461,7 @@
         </div>
     </section>
 
-    <section class="reservation-section">
+    <section class="reservation-section" id="reservation-section">
         <div class="container">
             <p class="position-relative fw-500">RESERVATION<span class="after-style "></span></p>
             <h2>Book a Table</h2>
@@ -475,7 +499,7 @@
         </div>
     </section>
 
-    <section class="testimonials-section">
+    <section class="testimonials-section" id="testimonials-section">
         <div class="container">
             <p class="position-relative fw-500">TESTIMONIALS<span class="after-style "></span></p>
             <h2>What they're saying about us</h2>
@@ -545,7 +569,7 @@
         </div>
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery-section">
         <div class="container">
             <p class="position-relative fw-500">GALLERY<span class="after-style "></span></p>
             <h2>Some photos from Our Resturant</h2>
@@ -596,7 +620,7 @@
         </div>
     </section>
 
-    <section class="team-section">
+    <section class="team-section" id="team-section">
         <div class="container">
             <p class="position-relative fw-500">TEAM<span class="after-style "></span></p>
             <h2>Necessitatibus eius consequatur</h2>
@@ -651,7 +675,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
         <div class="container">
             <p class="position-relative fw-500">CONTACT<span class="after-style "></span></p>
             <h2>Contact Us</h2>
@@ -708,76 +732,82 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer-section" id="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="block">
-                        <div class="footer-logo">
-                            <a href="#">Resturantly</a>
-                        </div>
-                        <address>
-                            A108 Adam Street <br>New York, NY 535022
-                        </address>
-                        <p><strong>Phone:</strong><a href="tel:5589 55488 55">+1 5589 55488 55</a></p>
-                        <p><strong>Email:</strong><a href="mailto:info@gmail.com">info@gmail.com</a></p>
-                        <div class="d-flex gap-3">
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="block">
-                                <h5>Useful Links</h5>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Terms of services</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                </ul>
+            <div class="footer-head">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="block">
+                            <div class="footer-logo">
+                                <h3><a href="#">Resturantly</a></h3>
+                            </div>
+                            <address>
+                                A108 Adam Street <br>New York, NY 535022
+                            </address>
+                            <p><strong>Phone:</strong><a href="tel:5589 55488 55"> +1 5589 55488 55</a></p>
+                            <p><strong>Email:</strong><a href="mailto:info@gmail.com"> info@gmail.com</a></p>
+                            <div class="d-flex gap-2 footer-logo-group">
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <h5>Our Services</h5>
-                            <ul>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Web Development</a></li>
-                                <li><a href="#">Product Management</a></li>
-                                <li><a href="#">Marketing</a></li>
-                                <li><a href="#">Graphic Design</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-5">
-                            <h5>Our Newsletter</h5>
-                            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                            <form class="d-flex " action="">
-                                <input type="email" name="email" class="form-control"/>
-                                <input type="submit" value="Subscribe">
-                            </form>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="block">
+                                    <h5>Useful Links</h5>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Terms of services</a></li>
+                                        <li><a href="#">Privacy policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <h5>Our Services</h5>
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Product Management</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h5>Our Newsletter</h5>
+                                <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                                <form class="d-flex " action="">
+                                    <input type="email" name="email" class="form-control"/>
+                                    <input type="submit" value="Subscribe">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="text-center border-top pt-4">
+            <div class="footer-bottom">
+                <div class="text-center">
                     <p>&copy; Copyright <span class="fw-500">Resturantly</span> All Rights Reserved</p>
-                  <p>Designed by <a href="#" class="fw-500"><em>Anubrata Deb</em></a></p>
-                </div>
+                    <p>Designed by <a href="#" class="fw-500"><em>Anubrata Deb</em></a></p>
+                </div>            
             </div>
-            
-        </div>
+        </div>       
     </footer>
+
+    <a href="#" class="up-arrow"><i class="bi bi-arrow-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
