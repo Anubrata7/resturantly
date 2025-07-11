@@ -1,0 +1,111 @@
+
+@media screen and (max-width:992px){
+    #v-pills-tab{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    #v-pills-tab::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        height: 2px;
+        background-color: var(--accent-color);
+    }
+    .specials-section .row .col-lg-3 button::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .specials-section .tab-content .tab-pane > *{
+        flex-wrap: wrap;
+    }
+    .event-slider-section .row{
+        gap: 20px;
+    }
+    .footer-head .footer-logo-group a{
+        margin: 20px 0 20px 0;
+    }
+}
+@media screen and (max-width: 767px){
+    /* .banner-section .text-block{
+        text-align: center;
+        width: 100%;   
+        height: fit-content; 
+        left: 0;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0;
+        .d-flex.gap-4{
+            justify-content: center;
+        }
+    }   */
+    .bottom-header{
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .banner-section .row.align-items-center{
+        gap: 40px;
+    }
+    .about-section h2{
+        text-align: center;
+    }
+    .about-section .row,
+    .team-section .row{
+        gap: 20px;
+    }
+    .reservation-section form{
+        padding: 0;
+    }
+    .contact-section .container > *{
+        flex-wrap: wrap;
+        gap: 0 !important;
+    }
+}
+@media screen and (max-width: 576px){
+    .banner-section .row.align-items-center{
+        text-align: center;
+        .d-flex.gap-4{
+           justify-content: center;
+        }
+    }
+    .about-section,
+    .why-us-section,
+    .menu-section,
+    .specials-section,
+    .event-slider-section,
+    .reservation-section,
+    .testimonials-section,
+    .gallery-section,
+    .team-section,
+    .contact-section{
+        padding: 30px 0;
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+    .why-us-section{
+        padding: 30px 0 10px 0;
+    }
+    .top-header .contact-links{
+        flex-wrap: wrap;
+        gap: 10px !important;  
+    }
+    .why-us-section .card-text-block{
+        margin: 0 0 20px 0;
+    }
+    .menu-section .d-flex.align-items-center.justify-content-center.gap-4.button-group.filters-button-group{
+        margin: 20px 0;
+    }
+    .menu-section .element-item{
+        margin: 10px 0;
+    }
+    .gallery-section .d-grid{
+        --cols: 2;
+    }
+}
