@@ -26,6 +26,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
 }
 
 html{
@@ -56,48 +57,6 @@ h1,h2,h3,h4,h5,h6 {
 .btn{
     padding: 5px 30px !important;
 }
-.btn-fill{
-    padding: 0 !important;
-    background-color: var(--accent-color);
-    position: relative;
-}
-/*
-.circle-span-1{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1999;
-    display: inline-block;
-    height: 85px;
-    width: 85px;
-    border-radius: 50%;
-    animation: btn-animation 4s infinite;
-    border: 3px solid red;
-    background-color: transparent;
-}
-.circle-span-2{
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    transform: translateY(-50%);
-    z-index: 1999;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    animation: btn-animation 4s infinite;
-    border: 3px solid rgb(0, 42, 255);
-    background-color: transparent;
-} */
-@keyframes btn-animation {
-    /* 0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;} */
-}
-
-
 .btn-outline{
     color: var(--default-color);
     outline: 2px solid var(--accent-color);
